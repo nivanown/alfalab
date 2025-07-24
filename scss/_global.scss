@@ -90,8 +90,8 @@ ul, ol {
   &_color-black {
     color: var(--primary-text-color);
     padding: 9px 9px;
-    border-radius: 8px;
     background: linear-gradient(180deg,rgba(255, 255, 255, 0.03) 0%, rgba(255, 255, 255, 0.1) 100%);
+    border-radius: 8px;
     box-shadow: 
       inset 0px -1px 0px rgba(0, 0, 0, 0.2),
       0px 0px 0px 1px rgba(255, 255, 255, 0.25),
@@ -103,6 +103,33 @@ ul, ol {
       opacity: 0.6;
       }
     }
+  &_color-blue {
+    gap: 0 13px;
+    color: var(--primary-text-color);
+    border: 1px solid var(--tertiary-border-color);
+    background: var(--tertiary-btn-color);
+    border-radius: 35px;
+    box-shadow: 0px 0px 20px rgba(245, 48, 107, 0.1);
+    &:hover {
+      color: var(--primary-text-color);
+      background: var(--quaternary-btn-color);
+      box-shadow: 0px 0px 20px rgba(245, 48, 107, 0.1);
+      opacity: 1;
+      }
+    }
+  &_color-light-blue {
+    gap: 0 8px;
+    color: var(--ninth-text-color);
+    border: 1px solid var(--tertiary-border-color);
+    background: var(--tertiary-btn-color);
+    box-shadow: 0px 0px 20px rgba(245, 48, 107, 0.1);
+    &:hover {
+      color: var(--ninth-text-color);
+      background: var(--quaternary-btn-color);
+      box-shadow: 0px 0px 20px rgba(245, 48, 107, 0.1);
+      opacity: 1;
+      }
+    }
   &_arrow-icon {
     &:after {
       display: block;
@@ -110,6 +137,28 @@ ul, ol {
       width: 16px;
       height: 16px;
       background: url(../img/icons/btn-arrow.svg) center no-repeat;
+      background-size: 100%;
+      content: "";
+      }
+    }
+  &_arrow-big {
+    &:after {
+      display: block;
+      margin: 1px 0 0;
+      width: 16px;
+      height: 16px;
+      background: url(../img/icons/more-arrow.svg) center no-repeat;
+      background-size: 100%;
+      content: "";
+      }
+    }
+  &_arrow-blue {
+    &:after {
+      display: block;
+      margin: 1px 0 0;
+      width: 16px;
+      height: 16px;
+      background: url(../img/icons/more-arrow-blue.svg) center no-repeat;
       background-size: 100%;
       content: "";
       }
