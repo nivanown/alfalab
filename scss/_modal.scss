@@ -1,0 +1,65 @@
+/* hystmodal */
+.hystmodal {
+  &__wrap {
+    padding: 50px 45px;
+  	}
+  button {
+    &.hystmodal__close {
+      width: 44px;
+      height: 44px;
+      top: -40px;
+      right: -50px;
+      border: 1px solid var(--tertiary-border-color);
+      background: url(../img/icons/modal-close.svg) center no-repeat var(--tertiary-btn-color);
+      background-size: 18px;
+      border-radius: 100%;
+      box-shadow: 0px 0px 20px rgba(245, 48, 107, 0.1);
+      transition: 0.5s opacity;
+      &:hover {
+        opacity: 0.8;
+      	}
+    	}
+  	}
+  div {
+    &.hystmodal__window {
+      max-width: 490px;
+      width: 100%;
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      background: var(--primary-background-color);
+      border-radius: 24px;
+      box-shadow: 0 4px 60px 0 rgba(0, 0, 0, 0.05);
+    	}
+  	}
+  &__styled {
+    padding: 30px;
+  	}
+  &__title {
+    margin: 0 0 14px;
+    font-size: 30px;
+    font-weight: var(--quaternary-font-weight);
+    line-height: 32px;
+  	}
+  &__sub-title {
+    margin: 0 0 24px;
+    color: var(--quaternary-text-color);
+    font-size: 16px;
+    line-height: 20px;
+    &_indent-bt-none {
+      margin: 0;
+    	}
+  	}
+  &__form {
+    fieldset {
+      margin: 0 0 10px;
+      &:last-child {
+        margin: 0;
+        padding: 10px 0 0;
+      	}
+    	}
+  	}
+  &__sm-title {
+    margin: 0 0 10px;
+    font-size: 20px;
+    line-height: 23px;
+  	}
+	}

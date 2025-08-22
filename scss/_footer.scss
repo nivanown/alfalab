@@ -1,0 +1,139 @@
+/* footer */
+.footer {
+	&__big-logo {
+		margin: 0 auto -104px;
+		padding: 0 15px;
+		max-width: 1470px;
+		width: 100%;
+		img {
+			width: 100%;
+			}
+		}
+	&__in {
+		position: relative;
+		padding: 95px 0 128px;
+		border-top: 1px solid var(--secondary-border-color);
+		background: linear-gradient(to right, rgba(0, 0, 0, 1) 20%, rgba(143, 141, 255, 0.1) 50%, rgba(0, 0, 0, 1) 80%);
+    background-size: cover;
+		box-shadow: 0px -4px 10px rgba(0, 0, 0, 0.11);
+		backdrop-filter: blur(20px);
+		z-index: 5;
+		}
+	&__top-col {
+		padding: 0 0 32px;
+		.nav-col {
+			margin: 0 0 96px;
+			}
+		}
+	&__logo {
+		width: 156px;
+		img {
+			width: 100%;
+			}
+		}
+	&__nav {
+		ul {
+			display: flex;
+			flex-direction: column;
+			gap: 20px 0;
+			}
+		li {
+			font-size: 14px;
+			line-height: 18px;
+			letter-spacing: 0.2px;
+			a {
+				color: var(--secondary-text-color);
+				&:hover {
+					color: var(--primary-text-color);
+					}
+				}
+			}
+		}
+	&__contacts {
+		display: flex;
+		flex-direction: column;
+		gap: 20px 0;
+		margin: 20px 0 0;
+		padding: 20px 0 0;
+		border-top: 1px solid rgba(255, 255, 255, 0.1);
+		li {
+			color: var(--secondary-text-color);
+			font-size: 14px;
+			line-height: 18px;
+			letter-spacing: 0.2px;
+			i {
+				display: block;
+				width: 10px;
+				height: 10px;
+				}
+			}
+		}
+	&__bottom-col {
+		display: flex;
+		justify-content: space-between;
+		align-items: flex-start;
+		padding: 32px 0 0;
+		border-top: 1px solid rgba(255, 255, 255, 0.1);
+		}
+	&__info-col {
+		display: flex;
+		align-items: center;
+		gap: 0 16px;
+		margin: 0 0 24px;
+		}
+	&__text {
+		display: block;
+		color: var(--eighth-text-color);
+		font-size: 12px;
+		line-height: 20px;
+		}
+	&__link {
+		display: block;
+		font-size: 12px;
+		line-height: 20px;
+		a {
+			color: var(--eighth-text-color);
+			}
+		}
+	}
+
+/* nav-col */
+.nav-col {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 0 32px;
+	&__title {
+		margin: 0 0 40px;
+		font-size: 14px;
+		font-weight: var(--tertiary-font-weight);
+		line-height: 22px;
+		}
+	}
+
+/* social */
+.social {
+	display: flex;
+	align-items: center;
+	gap: 0 16px;
+	li {
+		width: 20px;
+		a {
+			display: block;
+			transition: .5s opacity;
+			&:hover {
+				opacity: 0.7;
+				}
+			}
+		img {
+			width: 100%;
+			}
+		}
+	}
+
+/* copy */
+.copy {
+	display: block;
+	color: var(--eighth-text-color);
+	font-size: 12px;
+	line-height: 20px;
+	}
